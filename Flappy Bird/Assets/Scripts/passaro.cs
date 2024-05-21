@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class passaro : MonoBehaviour
+public class Passaro : MonoBehaviour
 {
     private float velocidade = 3f;
     Rigidbody2D fisica;
