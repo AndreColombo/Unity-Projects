@@ -17,11 +17,13 @@ public class Passaro : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            // chama o método impulsionar
+            // o this serve para indicar que é o objeto ativo naquele momento
             this.Impulsionar();
         }
     }
-
-    void Impulsionar()
+    // método que impulsiona nosso pássaro
+    private void Impulsionar()
     {
         this.fisica.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
     }

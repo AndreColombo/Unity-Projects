@@ -12,12 +12,22 @@ public class Obstaculo : MonoBehaviour
 
     private void Awake()
     {
-        this.transform.Translate(Vector3.up * Random.Range(-variacaoposicaoY, variacaoposicaoY));
+        this.transform.Translate(Vector3.up * Random.Range(variacaoposicaoY, -variacaoposicaoY));
     }
     // Update is called once per frame
     void Update()
     {
         this.transform.Translate(Vector3.left * velocidade * Time.deltaTime);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        this.Destruir();
+    }
+
+    private void Destruir()
+    {
+        Destroy(this.gameObject);
     }
 }
