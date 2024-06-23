@@ -2,20 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeradorDeObstaculos : MonoBehaviour
+public class GeradorDePowerUps : MonoBehaviour
 {
-
-    // Como criar os obstáculos?
-    // Onde criar? Na posição do gerador
-    // Quando criar? tempo
-
     [SerializeField]
-    private float tempoParaGerar = 5;
+    private float tempoParaGerar = 12;
 
     private float cronometro;
 
     [SerializeField]
-    private GameObject modeloObstaculo;
+    private GameObject modeloPowerUp;
 
     private void Awake()
     {
@@ -25,9 +20,9 @@ public class GeradorDeObstaculos : MonoBehaviour
     void Update()
     {
         this.cronometro -= Time.deltaTime;
-        if(this.cronometro < 0)
+        if (this.cronometro < 0)
         {
-            GameObject.Instantiate(this.modeloObstaculo, this.transform.position, Quaternion.identity);
+            GameObject.Instantiate(this.modeloPowerUp, this.transform.position, Quaternion.identity);
             this.cronometro = this.tempoParaGerar;
         }
     }
