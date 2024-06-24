@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3579617082285272197}
   - component: {fileID: 3429073085866419413}
+  - component: {fileID: -6653312904625119403}
   m_Layer: 0
   m_Name: missil
   m_TagString: Untagged
@@ -84,3 +85,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6653312904625119403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931614157232979901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01cd90d1ac4aa9f48a0ca0692145eee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 1
+  variacaoDaPosicaoY: 1.75
